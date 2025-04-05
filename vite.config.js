@@ -9,6 +9,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
+        goals: resolve(__dirname, 'src/goals.html'),
+        setupgoals: resolve(__dirname, 'src/setup-goals.html'),
+        challenge: resolve(__dirname, 'src/challenge.html'),
+        group: resolve(__dirname, 'src/group.html'),
       },
     },
   },
