@@ -1,0 +1,22 @@
+{
+  "name": "wdd330finalproject",
+  "version": "1.0.0",
+  "description": "Every Little Bit Helps",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview",
+    "lint": "eslint *.js src/**/*.js",
+    "format": "prettier --ignore-path ./.gitignore --write \"./**/*.{html,json,js,ts,css}\""
+  },
+  "keywords": [],
+  "author": "Stacy Yarrington",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.23.0",
+    "prettier": "^3.5.3",
+    "vite": "^6.2.5"
+  }
+}

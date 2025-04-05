@@ -1,0 +1,125 @@
+:root{
+    --padding: 1rem;
+    --dark-green-old: #4a5759;
+    --dark-green: #193819;
+    --light-green: #b0c4b1;
+    --light-gray: #dedbd2;
+    --light-pink: #f7e1d7;
+    --dark-pink: #edafb8;
+    --off-white: #FBF7F4;
+    --header-font: "Dancing Script";
+    --normal-font: "Playfair Display";
+}
+body{
+    max-width: 1080px;
+    /* min-width: 500px; */
+    font-family: var(--normal-font),"Times New Roman", Times, serif;
+    padding: var(--padding);
+    /* color: var(--dark-blue);
+    background-color: var(--light-blue); */
+    box-sizing: border-box; 
+    background-color: var(--light-gray);
+}
+h1, h2, h3{
+    text-align: center;
+    font-family: var(--header-font);
+}
+.stack{
+    display:flex;
+    flex-direction: column;
+}
+.across{
+    display:flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+.main-wrap{
+    display:flex;
+    flex-wrap: wrap;
+}
+.main-wrap p{
+    width: 40%;
+    margin: 1rem;
+}
+/* FORM */
+.form{
+    flex: 1;
+}
+.form fieldset{
+    margin: 1rem;
+    border: none;/*2px solid var(--dark-blue); */
+    /* background-color: var(--off-white); */
+
+}
+.form label{
+    display:block;
+    padding-top: 1rem;
+}
+.form input[type="text"],
+.form textarea, 
+.form input[type="email"]
+{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--dark-green);
+    margin-top: 5px;
+    
+}
+.required
+{
+    color: var(--orange);
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-green);
+    padding: var(--padding);
+    color: var(--off-white);
+
+}
+footer p{
+    margin: .5rem;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.random-quote-placeholder{
+    background-color: var(--light-pink);
+    height: 2rem;
+    flex: 0 0 10%;
+    display:inline-block;
+    width: 50px;
+}
+.information-placeholder{
+    background-color: var(--dark-pink);
+    height: 1000px;
+    flex: 0 0 10%;
+    width: 500px;
+    margin:1rem;
+}
+.group-member-placeholder{
+    background-color: var(--dark-pink);
+    height: 50px;    
+    width: 50px;
+    margin:1rem;
+}
+.placeholder{
+    background-color: var(--light-green);
+    height: 50px;    
+    width: 100%;
+    margin:1rem;
+}
+.group-chat-placeholder{
+    background-color: var(--dark-green);
+    height: 500px;    
+    width: 100%;
+    margin:1rem;
+}
