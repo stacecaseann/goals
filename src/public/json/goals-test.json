@@ -1,0 +1,13 @@
+{
+	"goals":
+	[
+		{
+			"goalId":1,
+			"goalName":"Run"
+		},
+		{
+			"goalId":2,
+			"goalName":"Jump"
+		}   
+	]
+}

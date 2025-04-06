@@ -1,4 +1,7 @@
-import { loadHeaderFooter } from "./utils.mjs";
-
+import { loadHeaderFooter, populateRandomQuoteElement } from "./utils.mjs";
+import { createReferenceList } from "./books.mjs";
 
 loadHeaderFooter();
+populateRandomQuoteElement();
+createReferenceList();
+

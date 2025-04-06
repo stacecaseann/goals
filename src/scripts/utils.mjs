@@ -1,5 +1,6 @@
 import { setupMenuButton, createNavigation } from './menu.js';
-import { populateFooterWithDates } from './footer.js';
+import { populateFooterWithDates } from './footer.mjs';
+import { getRandomQuote } from './quote.mjs';
 
 export async function loadHeaderFooter()
 {
@@ -40,4 +41,15 @@ async function loadTemplate(path){
       {
         callback(data);
       }
+  }
+
+  export async function populateRandomQuoteElement()
+  {
+    const quoteElement = document.getElementById("random-quote");
+    if (quoteElement)
+    {
+      const quoteTemplate = await getRandomQuote();
+      quoteElement.innerHTML = quoteTemplate;
+    }
+
   }

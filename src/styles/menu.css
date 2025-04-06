@@ -53,13 +53,14 @@
     position: relative;
 }
 nav{
-    background-color: var(--dark-green);
+    /* background-color: var(--dark-green); */
     max-width: 100%;
     padding: var(--padding);
     display: grid;
     grid-template-rows:0fr;
-    transition: grid-template-rows 0.5s ease-out;
+    transition: grid-template-rows 0.5s ease-in-out;
     color: white;
+    overflow: hidden;
 }
 nav ul{
     overflow:hidden;
@@ -74,7 +75,7 @@ nav ul{
     /* text-align: center; */
 }
 nav.open{
-    /* display:block; */
+    display:block;
     background-color: var(--dark-green);
     grid-template-rows: 1fr;
 }
