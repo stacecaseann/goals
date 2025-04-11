@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/style-large.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/menu-large.css">
-    <script type="module" src="scripts/main.js"></script>    
+    <script type="module" src="scripts/pages/setup-goals.mjs"></script>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -28,22 +28,21 @@
     <nav id="navigation">
     </nav>
     <main>
-        <h1>Progress</h1>
+        <h1>Set Up Goals</h1>
         <div class="across">
             <div class="stack">
-                <h2>Check In</h2>
-                <div class="placeholder"></div>
-                <div class="placeholder"></div>
-                <div class="placeholder"></div>
-                <div class="placeholder"></div>
-                <div class="placeholder"></div>
-                <div class="placeholder"></div>
-                <div class="placeholder"></div>
-                <div class="placeholder"></div>
+            <form id="setup-form">
+            <div id="goal-container" class="stack">
+                <!-- <input type="text" id ="last-goal-field" name="enter-goal" placeholder="Enter a goal" /> -->
             </div>
+            <button type="button" id="add-goal-button">Add Another Goal</button>
+            <button type="submit">Submit</button>
+
             <div class="stack">
                 <div class="random-quote-placeholder"></div>
             </div>
+            </form>
+        </div>
         </div>
     </main>        
     

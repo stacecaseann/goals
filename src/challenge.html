@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/style-large.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/menu-large.css">
-    <script type="module" src="scripts/main.js"></script>    
+    <script type="module" src="scripts/pages/challenge.mjs"></script>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -31,45 +31,65 @@
         <h1>Every Little Bit Helps</h1>
         <div class="across">
             <div class="stack">
-                <form method="get" action="thankyou.html" id="join-form" class="form">
-                    <fieldset>
-                        <label>First name<span class="required">*</span>
-                            <input type="text" name="fname" id="first-name" required autocomplete="given-name" title="Enter your first name">
-                        </label>
-                        <label>Last name<span class="required">*</span>
-                            <input type="text" name="lname" id="last-name" required autocomplete="family-name" title="Enter your last name">
-                        </label>
-                        <label>Email<span class="required">*</span>
-                            <input type="email" name="email" id="email" required autocomplete="email" title="Enter your email address">
-                        </label>
-                        <fieldset title="Interest Level">
-                        <legend>I am interested in: <span class="required">*</span></legend>
-                        <label><input type="checkbox" name="foodType" value="healthyRecipes" >Healthy Recipes</label>
-                        <label><input type="checkbox" name="foodType" value="nutrition" >Nutrition</label>
-                        <label><input type="checkbox" name="foodType" value="mealPlans" >Free Meal Plans</label>
-                        <label><input type="checkbox" name="foodType" value="Fitness" >Fitness</label>
-                        </fieldset>
-                        <label>Tell me about yourself:
-                            <textarea rows="3" name="description" id="description"></textarea>
-                        </label>
-                        <input type="hidden" name="timestamp" id="timestamp" tabindex="-1">
-                        <input type="submit" value="Sign me up!">
-                    </fieldset>
-                </form>
-                <hr class="divider1">
-                <div class="random-quote-placeholder"></div>
+                <h1>Goal Check-In</h1>
+                <div class="goal-total">
+                    <h2>Goals here</h2>
+                </div>
+                <div class="goal-cards">
+                    <div class="goal-details" id="goal-details">
+                        <div class="goal-card">
+                            <h3>Run</h3>
+                            <div class="goal-card-days">
+                            <button class="day-button" id = "Mon" type="submit" name="Mon" value="Mon">Mon</button>
+                            <button class="day-button placeholder">Placeholder</button>                            
+                            <button class="day-button placeholder">Placeholder</button>
+                            <button class="day-button placeholder">Placeholder</button>
+                            <button class="day-button placeholder">Placeholder</button>
+                            <button class="day-button placeholder">Placeholder</button>                            
+                            <button class="day-button placeholder">Placeholder</button>
+                        </div>
+                        </div>
+                        <div class="goal-card">
+                            <h3>Jump</h3>
+                            <div class="goal-card-days">
+                            <button class="day-button selected" id = "Mon" type="submit" name="Mon" value="Mon">Mon</button>
+                            <button class="day-button selected" id = "Tue" type="submit" name="Tue" value="Tue">Tue</button>
+                            <button class="day-button selected" id = "Wed" type="submit" name="Wed" value="Wed">Tue</button>
+                            <button class="day-button placeholder">Placeholder</button>                            
+                            <button class="day-button placeholder">Placeholder</button>
+                            <button class="day-button placeholder">Placeholder</button>
+                            <button class="day-button placeholder">Placeholder</button>
+                            
+                        </div>
+                        </div>                        
+                        <dialog class="goal-dialog" id="goal-dialog">
+                            <div>
+                                <h2>sample title</h2>
+                                <button class="close-dialog">X</button>
+                            </div>
+                            <div id="goal-details-modal">
+                            </div>
+                        </dialog>
+                    </div>
+                </div>
+                <!-- <div class="goal-cards">
+                    <div class="goal-details" id="goal-details">                        
+                    </div>
+                    
+                    <dialog class="goal-dialog" id="goal-dialog">
+                        <div>
+                            <h2>sample title</h2>
+                            <button class="close-dialog">X</button>
+                        </div>
+                        <div id="goal-details-modal">
+                        </div>
+                    </dialog>
+                </div> -->
             </div>
-            <div class="stack">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium voluptatem minima beatae dolore non quia repellat exercitationem illo? Saepe sed amet quam cupiditate aspernatur vitae ipsa minus dolorum ullam quo doloremque perspiciatis molestiae debitis perferendis praesentium deserunt qui modi, neque eos dolore rem delectus. Nemo deserunt reprehenderit repellendus voluptate?</p>
-                <div class="information-placeholder"></div>
+            <div class="random-quote-placeholder">
+                <h2>Random quote here</h2>
             </div>
-            <div class="profile">
-                <hr class="divider2">
-                <h3>About Me</h3>
-                <img src="images/profile.jpg" alt="Profile Pic" height="189" width="200">
-                <p>I have always been interested in healthy meals, collecting recipes, and meal planning. I wanted to create simple way to meal plan within a calorie limit.</p>
-                <p>The purpose of this site is to calculate your meal plan goals, then search for recipes and fill out a menu for the week. As you add a recipe, you will see if you are in the recommended macros and calories for the day.</p>
-            </div>
+            
         </div>
     </main>        
     

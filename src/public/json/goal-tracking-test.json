@@ -2,7 +2,7 @@
 	"goals":
 	[
 		{
-			"goalId":1,
+			"goalName":"Run",
 			"days":
 			[
                 {
@@ -20,7 +20,7 @@
 			]
 		},
 		{
-			"goalId":2,
+			"goalName":"Jump",
 			"days":
 			[
                 {
