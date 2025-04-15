@@ -27,7 +27,7 @@ async function getRandomFlowerIcon()
 }
 function getRandomInt(length)
 {
-    const randomInt = Math.floor(Math.random() * (length + 1));
+    const randomInt = Math.floor(Math.random() * (length));
     return randomInt;
 }
 async function loadFlowerJson()

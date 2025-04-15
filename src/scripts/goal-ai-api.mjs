@@ -1,4 +1,5 @@
-const apiKey = 'b0e4337af9msh58c47d67545d9f4p1d2fa4jsnb47ad5943664';//import.meta.env.VITE_QUOTE_API_KEY;
+const apiKey = import.meta.env.VITE_API_KEY;
+console.log(apiKey);
 const apiHost = 'chat-gpt26.p.rapidapi.com';
 const baseUrl = 'https://chat-gpt26.p.rapidapi.com/';
 

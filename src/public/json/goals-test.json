@@ -1,11 +1,10 @@
 {
-	"goals":
-	[
-		{
-			"goalName":"Run"
-		},
-		{
-			"goalName":"Jump"
-		}   
-	]
+  "goals": [
+    {
+      "goalName": "Run"
+    },
+    {
+      "goalName": "Jump"
+    }
+  ]
 }

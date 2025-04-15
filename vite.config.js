@@ -13,6 +13,7 @@ export default defineConfig({
         setupgoals: resolve(__dirname, 'src/setup-goals.html'),
         challenge: resolve(__dirname, 'src/challenge.html'),
         group: resolve(__dirname, 'src/group.html'),
+        thanks: resolve(__dirname, 'src/thankyou.html'),
       },
     },
   },

@@ -1,40 +1,40 @@
 {
-    "books":[
-        {
-            "title":"Eat that Frog!",
-            "author":"Brian Tracy",
-            "synopsis":"I love how this book teaches to get the hard things done with first thing in order to accomplish your goals.",
-            "image":"eatthatfrog.jpg"
-        },
-        {
-            "title":"Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
-            "author":"James Clear",
-            "synopsis":"This is the most in depth book about how to set and accomplish goals that I've ever read. There are so many step by step approaches.",
-            "image":"atomichabits.jpg"
-        },
-        {
-            "title":"The 7 Habits of Highly Effective People",
-            "author":"Stephen R. Covey",
-            "synopsis":"This book is not just about goal setting, but about aligning goals with your personal values and principles.",
-            "image":"sevenhabits.jpg"
-        },
-        {
-            "title":"Grit",
-            "author":"Angela Duckworth",
-            "synopsis":"A great book on staying strong through difficult things.",
-            "image":"grit.jpg"
-        },
-        {
-            "title":"Mindset",
-            "author":"Carol Dweck",
-            "synopsis":"How having a growth mindset can shape how you set and pursue goals.",
-            "image":"mindset.jpg"
-        },
-        {
-            "title":"All It Takes Is a Goal: The 3-Step Plan to Ditch Regret and Tap Into Your Massive Potential",
-            "author":"Jon Acuff",
-            "synopsis":"Great book with practical steps to accomplish goals.",
-            "image":"allittakes.jpg"
-        }
-    ]
+  "books": [
+    {
+      "title": "Eat that Frog!",
+      "author": "Brian Tracy",
+      "synopsis": "I love how this book teaches to get the hard things done with first thing in order to accomplish your goals.",
+      "image": "eatthatfrog.jpg"
+    },
+    {
+      "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+      "author": "James Clear",
+      "synopsis": "This is the most in depth book about how to set and accomplish goals that I've ever read. There are so many step by step approaches.",
+      "image": "atomichabits.jpg"
+    },
+    {
+      "title": "The 7 Habits of Highly Effective People",
+      "author": "Stephen R. Covey",
+      "synopsis": "This book is not just about goal setting, but about aligning goals with your personal values and principles.",
+      "image": "sevenhabits.jpg"
+    },
+    {
+      "title": "Grit",
+      "author": "Angela Duckworth",
+      "synopsis": "A great book on staying strong through difficult things.",
+      "image": "grit.jpg"
+    },
+    {
+      "title": "Mindset",
+      "author": "Carol Dweck",
+      "synopsis": "How having a growth mindset can shape how you set and pursue goals.",
+      "image": "mindset.jpg"
+    },
+    {
+      "title": "All It Takes Is a Goal: The 3-Step Plan to Ditch Regret and Tap Into Your Massive Potential",
+      "author": "Jon Acuff",
+      "synopsis": "Great book with practical steps to accomplish goals.",
+      "image": "allittakes.jpg"
+    }
+  ]
 }

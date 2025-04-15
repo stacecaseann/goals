@@ -1,33 +1,32 @@
 {
-    "flowers":
-    [
-        {
-            "filename": "sakura.png",
-            "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by istar_design_bureau - Flaticon</a>"
-        },
-        {
-            "filename": "bouquet.png",
-            "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\flower icons\">Flower icons created by Freepik - Flaticon</a>"
-        },
-        {
-            "filename": "flower.png",
-            "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by kornkun - Flaticon</a>"
-        },
-        {
-            "filename": "tulips.png",
-            "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by La.creative - Flaticon</a>"
-        },
-        {
-            "filename": "lavendar.png",
-            "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by istar_design_bureau - Flaticon</a>"
-        },
-        {
-            "filename": "sakura1.png",
-            "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by Kanyanee Watanajitkasem - Flaticon</a>"
-        },
-        {
-            "filename": "cherry-blossom.png",
-            "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by max.icons - Flaticon</a>"
-        }
-    ]
+  "flowers": [
+    {
+      "filename": "sakura.png",
+      "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by istar_design_bureau - Flaticon</a>"
+    },
+    {
+      "filename": "bouquet.png",
+      "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\flower icons\">Flower icons created by Freepik - Flaticon</a>"
+    },
+    {
+      "filename": "flower.png",
+      "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by kornkun - Flaticon</a>"
+    },
+    {
+      "filename": "tulips.png",
+      "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by La.creative - Flaticon</a>"
+    },
+    {
+      "filename": "lavender.png",
+      "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by istar_design_bureau - Flaticon</a>"
+    },
+    {
+      "filename": "sakura1.png",
+      "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by Kanyanee Watanajitkasem - Flaticon</a>"
+    },
+    {
+      "filename": "cherry-blossom.png",
+      "attribution": "<a href=\"https://www.flaticon.com/free-icons/flower\" title=\"flower icons\">Flower icons created by max.icons - Flaticon</a>"
+    }
+  ]
 }

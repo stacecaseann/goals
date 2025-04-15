@@ -1,8 +1,10 @@
-const apiKey = 'b0e4337af9msh58c47d67545d9f4p1d2fa4jsnb47ad5943664';//import.meta.env.VITE_QUOTE_API_KEY;
+const apiKey = import.meta.env.VITE_API_KEY;
+console.log(apiKey);
+console.log(import.meta.env);
 const apiHost = 'pquotes.p.rapidapi.com';
 const baseUrl = 'https://pquotes.p.rapidapi.com/api/quote';
 
-export async function getRandomQuoteApi()
+export async function getRandomQuoteApiFromJson()
 {
     try{
         const response = await fetch('/json/random-quote.json');
@@ -19,7 +21,7 @@ export async function getRandomQuoteApi()
     }
 }
 //TODO Add this back at the end so I don't use up quote limit
-export async function getRandomQuoteApiOLD()
+export async function getRandomQuoteApi()
 {
         const options = {
             method: 'POST',

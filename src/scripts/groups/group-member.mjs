@@ -11,13 +11,13 @@ export default class GroupMember
 
     }
     
-    createGroupMember(groupMember)
+    createGroupMember()
     {
         const groupMemberDiv = document.createElement('div');
         groupMemberDiv.className = 'group-member';
         const img = document.createElement('img');
-        img.src = `images/avatars/${groupMember.icon}`;
-        img.alt = `${groupMember.name}`;
+        img.src = `images/avatars/${this.icon}`;
+        img.alt = `${this.name}`;
         img.height = 64;
         img.width = 64;
         groupMemberDiv.appendChild(img);
@@ -37,15 +37,23 @@ export default class GroupMember
             }
             else            
             {
-                goalChartElement.style.width = `${groupMember.percent}%`;
+                goalChartElement.style.width = `${this.percent}%`;
                 img.classList.add('selected-image');
                 percentElement.classList.add('open');
                 this.currentlySelectedImg = img;
             }
-
+            setAttributionOnFooter(this.iconAttribution);
         });
-        //Set the attribution as iconAttribution
-        //percent
+
         return groupMemberDiv;
+    }
+}
+
+function setAttributionOnFooter(attribution)
+{
+    const avatarElement = document.getElementById("avatarAttribution");
+    if (avatarElement)
+    {
+        avatarElement.innerHTML = attribution;
     }
 }

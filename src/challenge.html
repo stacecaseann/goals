@@ -1,70 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/style-large.css">
-    <link rel="stylesheet" href="styles/menu.css">
-    <link rel="stylesheet" href="styles/menu-large.css">
-    <script type="module" src="scripts/pages/challenge.mjs"></script>    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style-large.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/menu-large.css" />
+    <script type="module" src="scripts/pages/challenge.mjs"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <meta name="description" content="WDD 330 - Every Little Bits Habit Tracking and Challenges - Stacy Yarrington">
-    <meta name="author" content="Stacy Yarrington">
+    <meta
+      name="description"
+      content="WDD 330 - Every Little Bits Habit Tracking and Challenges - Stacy Yarrington"
+    />
+    <meta name="author" content="Stacy Yarrington" />
     <title>WDD 330- Every Little Bit Helps</title>
-    <link rel="icon" href="images/favicon.ico">
-    <meta property="og:title" content="Every Little Bit Helps">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://stacecaseann.github.io/wdd330/finalproject/">
-    <meta property="og:image" content="https://stacecaseann.github.io/wdd330/finalproject/sitephoto.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">    
-</head>
-<body>
-    <header id="header" class="main-header">
-    </header>
-    <nav id="navigation">
-    </nav>
+    <link rel="icon" href="images/favicon.ico" />
+    <meta property="og:title" content="Every Little Bit Helps" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://aquamarine-arithmetic-c43025.netlify.app/challenge.html"
+    />
+    <meta
+      property="og:image"
+      content="https://aquamarine-arithmetic-c43025.netlify.app/images/groupheader-small.webp"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header" class="main-header"></header>
+    <nav id="navigation"></nav>
     <main class="page-container">
-        <div class="across center">
-          <h1>Goal Check-In</h1>
-          <button id="add-goal-day" class="add-goal-day">+</button>
-          <button id="reset-goals" class="reset-goals">x</button>
-        </div>
-      
-        <div class="across center">
-          <h3>Total Completed:</h3>
-          <div class="goalChart">
-            <div class="goal-fill"></div>
-          </div>
-        </div>
-      
-        <div class="stack">
+      <div class="across center">
+        <h1>Goal Check-In</h1>
+        <button id="add-goal-day" class="add-goal-day">+</button>
+        <button id="reset-goals" class="reset-goals">x</button>
+      </div>
 
-            <div class="goal-cards">
-              <div class="goal-details" id="goal-details"></div>
-              <dialog class="goal-dialog" id="goal-dialog">
-                <div>
-                  <h2>sample title</h2>
-                  <button class="close-dialog">X</button>
-                </div>
-                <div id="goal-details-modal"></div>
-              </dialog>
-            </div>
-      
-          <div class="divider"></div>
-      
-          <div class="center">
-            <div id="random-quote" class="random-quote"></div>
-          </div>
+      <div class="across center">
+        <h3>Total Completed:</h3>
+        <div class="goalChart">
+          <div class="goal-fill"></div>
         </div>
-      
-        <div class="confetti-container"></div>
-      </main>
-           
-    
+      </div>
+
+      <div class="stack">
+        <div class="goal-cards">
+          <div class="goal-details" id="goal-details"></div>
+          <dialog class="goal-dialog" id="goal-dialog">
+            <div>
+              <h2>sample title</h2>
+              <button class="close-dialog">X</button>
+            </div>
+            <div id="goal-details-modal"></div>
+          </dialog>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="center">
+          <div id="random-quote" class="random-quote"></div>
+        </div>
+      </div>
+
+      <div class="confetti-container"></div>
+    </main>
+
     <footer id="footer" class="main-footer"></footer>
-</body>
+  </body>
 </html>

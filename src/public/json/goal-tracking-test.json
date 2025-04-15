@@ -1,41 +1,38 @@
 {
-	"goals":
-	[
-		{
-			"goalName":"Run",
-			"days":
-			[
-                {
-				"day":1,
-				"completed":true
-                },
-                {
-                "day":2,
-                "completed":false
-                },
-                {
-                "day":3,
-                "completed":true
-                }
-			]
-		},
-		{
-			"goalName":"Jump",
-			"days":
-			[
-                {
-				"day":1,
-				"completed":true
-                },
-                {
-                "day":2,
-                "completed":true
-                },
-                {
-                "day":3,
-                "completed":false
-                }
-			]
-		}        
-	]
+  "goals": [
+    {
+      "goalName": "Run",
+      "days": [
+        {
+          "day": 1,
+          "completed": true
+        },
+        {
+          "day": 2,
+          "completed": false
+        },
+        {
+          "day": 3,
+          "completed": true
+        }
+      ]
+    },
+    {
+      "goalName": "Jump",
+      "days": [
+        {
+          "day": 1,
+          "completed": true
+        },
+        {
+          "day": 2,
+          "completed": true
+        },
+        {
+          "day": 3,
+          "completed": false
+        }
+      ]
+    }
+  ]
 }

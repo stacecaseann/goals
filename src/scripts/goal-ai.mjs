@@ -22,8 +22,6 @@ async function addMessageToChat()
         await addAnswer(chatElement, userInputElement, userInput);
     }
 
-    // const formData = new FormData(event.target);
-    // const userInput = formData.get("ai-question");
 }
 
 function createChatMessage(chatElement, userInputElement, message, className)
