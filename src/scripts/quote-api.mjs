@@ -1,4 +1,4 @@
-const apiKey = import.meta.env.VITE_API_KEY;
+const apiKey = "b0e4337af9msh58c47d675d9fp1d2fa4jsnb47ad5943664";//import.meta.env.VITE_API_KEY;
 console.log(apiKey);
 console.log(import.meta.env);
 const apiHost = 'pquotes.p.rapidapi.com';
