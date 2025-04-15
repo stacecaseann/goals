@@ -1,0 +1,67 @@
+{
+	"members": [
+		{
+			"name": "Ben",
+			"icon": "boy.png",
+			"iconAttribution": "<a href=\"https://www.flaticon.com/free-icons/face\" title=\"face icons\">Face icons created by Sudowoodo - Flaticon</a>",
+			"percent": "85",
+            "chat":[{
+                "date":"2025-04-07T06:30:00",
+                "message": "Hey guys, just checking in, how is everyone doing?"
+            }]
+		},
+		{
+			"name": "Sarah",
+			"icon": "girl.png",
+			"iconAttribution": "<a href=\"https://www.flaticon.com/free-icons/cute\" title=\"cute icons\">Cute icons created by Chanut-is-Industries - Flaticon</a>",
+			"percent": "75",
+            "chat":[{
+                "date":"2025-04-07T07:30:00",
+                "message": "Good, I'm on a roll!"
+            }]
+		},
+		{
+			"name": "Jane",
+			"icon": "girl1.png",
+			"iconAttribution": "<a href=\"https://www.flaticon.com/free-icons/girl\" title=\"girl icons\">Girl icons created by Sudowoodo - Flaticon</a>",
+			"percent": "65",
+            "chat":[{
+                "date":"2025-04-07T08:30:00",
+                "message": "Help! I just want to eat cookies!"
+            },
+            {
+                "date":"2025-04-07T10:30:00",
+                "message": "Thanks everyone!"
+            }
+        ]
+		},
+		{
+			"name": "Riley",
+			"icon": "girl2.png",
+			"iconAttribution": "<a href=\"https://www.flaticon.com/free-icons/girl\" title=\"girl icons\">Girl icons created by Sudowoodo - Flaticon</a>",
+			"percent": "50",
+            "chat":[{
+                "date":"2025-04-07T09:40:00",
+                "message": "You can do it, maybe get a big drink and take a walk?"
+            }]
+		},
+		{
+			"name": "Pam",
+			"icon": "girl3.png",
+			"iconAttribution": "<a href=\"https://www.flaticon.com/free-icons/cartoon\" title=\"cartoon icons\">Cartoon icons created by Sudowoodo - Flaticon</a>",
+			"percent": "98",
+            "chat":[{
+                "date":"2025-04-07T09:50:00",
+                "message": "You can do it, I believe in you!"
+            }
+        ]
+		},
+		{
+			"name": "Jon",
+			"icon": "man.png",
+			"iconAttribution": "<a href=\"https://www.flaticon.com/free-icons/beard\" title=\"beard icons\">Beard icons created by Sudowoodo - Flaticon</a>",
+			"percent": "100",
+            "chat":[]
+		}
+	]
+}

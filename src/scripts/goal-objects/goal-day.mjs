@@ -7,8 +7,11 @@ export default class GoalDay
         //bool true or false
         this.completed = completed;
     }
-    setCompleted(completed)
+    setCompleted()
     {
-        this.completed = completed;
+        if (this.completed)
+            this.completed = false;
+        else
+            this.completed = true;
     }
 }

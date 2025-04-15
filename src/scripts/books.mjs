@@ -27,10 +27,10 @@ async function loadBooks()
 
 function createBookTemplate(book)
 {
-    return `<p>${book.title}</p>
-    <p>${book.author}</p>
+    return `<div class="divider"></div><p class="bold">${book.title}</p>
+    <p class="italic">${book.author}</p>
     <p>${book.synopsis}</p>
-    <img src="/images/books/${book.image}" class="icon" width="32" height="32" alt="Flower Icon">
+    <img src="/images/books/${book.image}" class="icon" alt="Flower Icon">
     `;
        
 }

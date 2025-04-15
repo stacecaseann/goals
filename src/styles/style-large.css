@@ -1,0 +1,5 @@
+@media (max-width: 750px) {
+    .goal-details {
+        grid-template-columns: 1fr; /* one card across */
+    }
+}

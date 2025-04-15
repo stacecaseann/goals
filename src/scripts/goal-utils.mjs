@@ -1,11 +1,11 @@
 import Goal from "./goal-objects/goal.mjs";
-export async function createTrackedGoalsList()
-{
-    const goalList = await getGoalsListTemp();
-    goalList.markOffGoal(3,1,true);//new goal
-    goalList.markOffGoal(2,4,true);//new goal day
-    goalList.markOffGoal(1,1,false);//existing goal day
-}
+// export async function createTrackedGoalsList()
+// {
+//     const goalList = await getGoalsListTemp();
+//     goalList.markOffGoal(3,1,true);//new goal
+//     goalList.markOffGoal(2,4,true);//new goal day
+//     goalList.markOffGoal(1,1,false);//existing goal day
+// }
 
 export async function getGoalsTemp()
 {

@@ -30,17 +30,52 @@ h1, h2, h3,.random-quote{
     background-color: var(--light-pink);
     border-radius: 10px;
     margin: 2rem;
+    max-width: 300px;
 }
 .stack{
     display:flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start; /* instead of center */
+    /* align-items: flex-start;
+    justify-content: flex-start;  */
 }
 .across{
     display:flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divider{
+    border: none;
+    height: 2px;
+    background-color: var(--dark-green); /* Adjust color */
+    width: 50%;
+    display:block;
+    margin: 20px auto; /* Center horizontally */
+}
+.profile{
+    display:flex;
+    flex-direction: column;    
+    justify-content: start;
+    align-items: center;
+
+}
+.bold{
+    font-weight: bold;
+}
+.italic
+{
+    font-style: italic;
+}
+.resources
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .main-wrap{
     display:flex;
@@ -51,22 +86,22 @@ h1, h2, h3,.random-quote{
     margin: 1rem;
 }
 /* FORM */
-.form{
+form{
     min-width:300px;
 }
-.form fieldset{
+form fieldset{
     margin: 1rem;
     border: none;/*2px solid var(--dark-blue); */
     /* background-color: var(--off-white); */
 
 }
-.form label{
+form label{
     display:block;
     padding-top: 1rem;
 }
-.form input[type="text"],
-.form textarea, 
-.form input[type="email"]
+form input[type="text"],
+form textarea, 
+form input[type="email"]
 {
     display: block;
     width: 100%;
@@ -76,7 +111,7 @@ h1, h2, h3,.random-quote{
     margin-top: 5px;
     
 }
-.form input[type="submit"]{
+form input[type="submit"]{
     margin-top: 5px;
 }
 .required
@@ -89,6 +124,8 @@ h1, h2, h3,.random-quote{
     grid-template-rows: 1fr auto;
     height: 500px;
     max-height: 100vh;    
+    gap: 10px;
+    margin: 2rem;
 }
 .chat-box{
     background-color: var(--off-white);    
@@ -99,6 +136,11 @@ h1, h2, h3,.random-quote{
     border-radius: 10px;
     margin: 1rem;
 }
+.group-chat{
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 1rem 1rem 1rem;
+}
 .chat-ai{
     background-color: var(--light-pink);    
     text-align: left;
@@ -108,13 +150,31 @@ h1, h2, h3,.random-quote{
     background-color: var(--light-green);
     text-align: right;
 }
+.sender-name {
+    font-size: 0.75rem;
+    color: #555;
+    margin-bottom: 4px;
+    margin-left:1rem;
+  }
+.sender-name:first-of-type
+{
+    margin-top: 1rem;
+}
+.goal-tips div,
+.goal-tips li
+{
+    margin: .5rem;
+}
+.goal-tips li::marker {
+    font-weight: bold;
+  }
 /* Day buttons */
-.setup-form
+/* .setup-form
 {
     display: flex;
       flex-wrap: wrap;
       gap: 10px;
-}
+} */
 .day-button
 {
     width: 40px;
@@ -131,6 +191,9 @@ h1, h2, h3,.random-quote{
     transition: background-color .2s ease;
     font-family: var(--normal-font);
 }
+.day-button:hover:not(.selected) {
+    background-color: var(--light-green);
+  }
 .placeholder{
     visibility: hidden;
 }
@@ -138,29 +201,65 @@ h1, h2, h3,.random-quote{
 {
     background-color: var(--light-green);
 }
+.setup-form{
+    margin: 1rem;
+}
+.goal-container
+{
+    margin: 2rem;
+}
+.goal-container div{
+    margin: 5px;
+}
 .selected
 {
     background-color: var(--light-green);
+}
+.selected-image
+{
+    box-shadow: 0 0 10px 4px rgba(33, 37, 40, 0.5);
 }
 .hidden
 {
     display: none;
 }
+.resources img
+{
+    width: 64px;
+    height: auto;
+}
 /* Goals */
+.page-container{
+    position: relative;
+    max-width: 1080px;
+}
 .goal-dialog > div:first-of-type{
     display: grid;
     grid-template-columns: auto 44px;
     background-color: var(--medium-blue);
 }
+.goal-dialog{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5); /* Optional: adds dark background behind dialog */
+  }
 .goal-details{
     margin-top: 20px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two cards across by default */
+    justify-items: center; /* centers horizontally */
+    align-items: center;   /* centers vertically */
 }
 .goal-details-modal
 {
     margin:1rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
 }
 .goal-card{
     display: flex;
@@ -174,6 +273,75 @@ h1, h2, h3,.random-quote{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15), 0 10px 25px rgba(0, 0, 0, 0.2);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     margin:1rem;
+    width: fit-content;
+    white-space: nowrap;
+}
+.add-goal-day,
+.reset-goals{
+    background-color: transparent;
+    border:none;
+}
+.goalChart {
+    width: 50%;
+    background-color: var(--light-pink);
+    border-radius: 20px;
+    height: 2rem;
+    overflow: hidden;
+    margin: 0 1rem 0 1rem;
+}
+.goal-fill {
+    background-color: var(--light-green);
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.confetti-container
+{
+    position: fixed;
+    top:0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9999;
+}
+.confetti
+{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    opacity: 0.8;
+    animation: fall 3s linear forwards;
+    border-radius: 2px;
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+.group-percentage
+{
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height .5s ease, opacity .5s ease;
+
+}
+.group-percentage.open{
+    max-height: 500px;
+    opacity: 1;
+}
+
+.group-member
+{
+    margin: 1rem;
 }
 footer{
     display:flex;
@@ -193,6 +361,16 @@ footer a{
     text-decoration: none;
     transition: color .3s ease;
 }
+.test-button
+{
+    background-color: var(--light-gray);
+}
+.test-button:hover
+{
+    background-color: var(--light-gray);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 .random-quote-placeholder{
     background-color: var(--light-pink);
@@ -206,12 +384,6 @@ footer a{
     height: 1000px;
     flex: 0 0 10%;
     width: 500px;
-    margin:1rem;
-}
-.group-member-placeholder{
-    background-color: var(--dark-pink);
-    height: 50px;    
-    width: 50px;
     margin:1rem;
 }
 /* .placeholder{

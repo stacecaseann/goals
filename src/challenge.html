@@ -27,71 +27,43 @@
     </header>
     <nav id="navigation">
     </nav>
-    <main>
-        <h1>Every Little Bit Helps</h1>
-        <div class="across">
-            <div class="stack">
-                <h1>Goal Check-In</h1>
-                <div class="goal-total">
-                    <h2>Goals here</h2>
-                </div>
-                <div class="goal-cards">
-                    <div class="goal-details" id="goal-details">
-                        <div class="goal-card">
-                            <h3>Run</h3>
-                            <div class="goal-card-days">
-                            <button class="day-button" id = "Mon" type="submit" name="Mon" value="Mon">Mon</button>
-                            <button class="day-button placeholder">Placeholder</button>                            
-                            <button class="day-button placeholder">Placeholder</button>
-                            <button class="day-button placeholder">Placeholder</button>
-                            <button class="day-button placeholder">Placeholder</button>
-                            <button class="day-button placeholder">Placeholder</button>                            
-                            <button class="day-button placeholder">Placeholder</button>
-                        </div>
-                        </div>
-                        <div class="goal-card">
-                            <h3>Jump</h3>
-                            <div class="goal-card-days">
-                            <button class="day-button selected" id = "Mon" type="submit" name="Mon" value="Mon">Mon</button>
-                            <button class="day-button selected" id = "Tue" type="submit" name="Tue" value="Tue">Tue</button>
-                            <button class="day-button selected" id = "Wed" type="submit" name="Wed" value="Wed">Tue</button>
-                            <button class="day-button placeholder">Placeholder</button>                            
-                            <button class="day-button placeholder">Placeholder</button>
-                            <button class="day-button placeholder">Placeholder</button>
-                            <button class="day-button placeholder">Placeholder</button>
-                            
-                        </div>
-                        </div>                        
-                        <dialog class="goal-dialog" id="goal-dialog">
-                            <div>
-                                <h2>sample title</h2>
-                                <button class="close-dialog">X</button>
-                            </div>
-                            <div id="goal-details-modal">
-                            </div>
-                        </dialog>
-                    </div>
-                </div>
-                <!-- <div class="goal-cards">
-                    <div class="goal-details" id="goal-details">                        
-                    </div>
-                    
-                    <dialog class="goal-dialog" id="goal-dialog">
-                        <div>
-                            <h2>sample title</h2>
-                            <button class="close-dialog">X</button>
-                        </div>
-                        <div id="goal-details-modal">
-                        </div>
-                    </dialog>
-                </div> -->
-            </div>
-            <div class="random-quote-placeholder">
-                <h2>Random quote here</h2>
-            </div>
-            
+    <main class="page-container">
+        <div class="across center">
+          <h1>Goal Check-In</h1>
+          <button id="add-goal-day" class="add-goal-day">+</button>
+          <button id="reset-goals" class="reset-goals">x</button>
         </div>
-    </main>        
+      
+        <div class="across center">
+          <h3>Total Completed:</h3>
+          <div class="goalChart">
+            <div class="goal-fill"></div>
+          </div>
+        </div>
+      
+        <div class="stack">
+
+            <div class="goal-cards">
+              <div class="goal-details" id="goal-details"></div>
+              <dialog class="goal-dialog" id="goal-dialog">
+                <div>
+                  <h2>sample title</h2>
+                  <button class="close-dialog">X</button>
+                </div>
+                <div id="goal-details-modal"></div>
+              </dialog>
+            </div>
+      
+          <div class="divider"></div>
+      
+          <div class="center">
+            <div id="random-quote" class="random-quote"></div>
+          </div>
+        </div>
+      
+        <div class="confetti-container"></div>
+      </main>
+           
     
     <footer id="footer" class="main-footer"></footer>
 </body>

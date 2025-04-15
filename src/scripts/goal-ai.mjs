@@ -26,7 +26,7 @@ async function addMessageToChat()
     // const userInput = formData.get("ai-question");
 }
 
-async function createChatMessage(chatElement, userInputElement, message, className)
+function createChatMessage(chatElement, userInputElement, message, className)
 {
     const messageDiv = document.createElement("div");
     messageDiv.className =  `${className} chat`;

@@ -2,7 +2,7 @@ import { setupMenuButton, createNavigation } from './menu.js';
 import { populateFooterWithDates } from './footer.mjs';
 import { getRandomQuote } from './quote.mjs';
 
-export async function loadHeaderFooter()
+export async function loadHeaderFooter(page)
 {
   const headerPath = 'partials/header.html';
   const footerPath = 'partials/footer.html';
@@ -19,7 +19,7 @@ export async function loadHeaderFooter()
   populateFooterWithDates();
 
   const navigationElement = document.querySelector("#navigation");
-  navigationElement.innerHTML = createNavigation("home");
+  navigationElement.innerHTML = createNavigation(page);
 
 }
 

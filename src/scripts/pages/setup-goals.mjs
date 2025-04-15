@@ -1,11 +1,15 @@
-import { loadHeaderFooter } from "../utils.mjs";
-import { WeekButtons } from "../week-utils.mjs";
-import { createTrackedGoalsList, getGoalsTemp } from "../goal-utils.mjs";
+import { loadHeaderFooter,populateRandomQuoteElement } from "../utils.mjs";
+
 import Goal from "../goal-objects/goal.mjs";
 
-loadHeaderFooter();
-setupGoalForm();
 
+async function initializePage() {
+    await loadHeaderFooter('setup-goals');
+    setupGoalForm();
+    await populateRandomQuoteElement();
+  }
+
+initializePage();  
 function setupGoalForm()
 {
     loadExistingGoals();
@@ -118,54 +122,3 @@ function createGoalInput(goalText, newGoal)
     });
     return div;
 }
-    // document.getElementById("setup-form").addEventListener("submit", function(event) {
-    //     event.preventDefault(); 
-    //     console.log("Form submitted via JS, not page reload!");
-    //     const formData = new FormData(event.target);
-    //     const formObject = {};
-    //     formData.forEach((value, key) => {
-    //         formObject[key] = value;
-    //     });
-    
-    //     console.log(formObject); 
-    //     console.log(formObject['enter-goal']);
-    //     const goalText = formObject['enter-goal'];
-    //     const goal = new Goal(goalText);
-    //     goal.saveGoal();
-
-    //     // You can handle the form data here instead (e.g., with fetch/AJAX)
-    //     });
-
-// function createAddGoalTemplate()
-// {
-//     <form id="setup-form" class="setup-form">
-//     <fieldset>
-//         <input type="text" name="enter-goal" id="enter-goal"></input>
-//         <div id="print-days"></div>                        
-//         <input type="submit" value="Add"></input>
-//     </fieldset>
-// </form>  
-// }
-
-// const goalsTemp = getGoalsTemp();
-
-// const weekButtons = new WeekButtons(0);
-// weekButtons.setupWeekButtons();
-
-
-
-
-//1. Create a way to enter these goals - on setup page, save to storage after every goal added?
-//2. Once the goals are setup, initialize the goal list 
-//      a. Add day one for every goal
-//      b. add a temp button that adds a goal and initializes each day
-//3. Save the list to storage look at goal-tracking-test.json for information
-//      a. need a way to save and retrieve the list
-//4. Need a function that will take a day that exists (Or any day) and add complete or not
-//5. Show last 7 days of each day
-//    a. each card should be a goal like recipe,with modal
-//6. Check or uncheck the goals - start gray, check is green
-//7. Modal for when I click on the goal name, it will show the history of the entire challenge
-//const goalListTemp = getGoalListTemp();
-//createTrackedGoalsList();
-

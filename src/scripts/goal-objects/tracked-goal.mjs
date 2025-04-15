@@ -5,7 +5,6 @@ export default class TrackedGoal
     {
         //Goal class
         this.goal = goal;
-
         //GoalDay class
         if (goalDays)
             this.days = goalDays;
@@ -21,10 +20,6 @@ export default class TrackedGoal
     addGoalDay(goalDay)
     {
         this.days.push(goalDay);
-    }
-    createGoalDetailsHtml()
-    {
-        return `<p>put in details here</p>`;
     }
 }
 

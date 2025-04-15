@@ -28,27 +28,38 @@
     <nav id="navigation">
     </nav>
     <main>
-        <h1>Every Little Bit Helps</h1>
-        <div class="across">
+        <h1>Group Check-In</h1>
+        <div class="across center">
             <div class="stack">
-               <div class="across">
-                <div class="group-member-placeholder"></div>
-                <div class="group-member-placeholder"></div>
-                <div class="group-member-placeholder"></div>
-                <div class="group-member-placeholder"></div>
-                <div class="group-member-placeholder"></div>
-               </div> 
+                <div class="group-members across" id="group-members"></div>
+                <div class="group-percentage" id ="group-percentage">
+                    <div class="across center">
+                        <h3>Total Completed:</h3>
+                        <div class="goalChart">
+                          <div class="goal-fill"></div>
+                        </div>
+                      </div>
+                </div>
                <div class ="placeholder"></div>
                <h3>Group Chat</h3>
-               <div class="group-chat-placeholder">
+               <div class="chat-grid">
 
-               </div>
+                <div class="chat-box" id="chat-box">
+                 
+                </div>
+                <form id="chat-form" class="chat-form">
+                    <fieldset>
+                        <input type="text" name="chat-question" id="chat-question"></input>
+                        <input type="submit" value="Send"></input>
+                    </fieldset>
+                </form>        
+                </div>
             </div>
-            <div class="stack">
-                <div class="random-quote-placeholder"></div>    
-            </div>
-            
         </div>
+        <div class="stack center">
+            <div class="divider"></div>
+        <div id="random-quote" class="random-quote"></div>
+    </div>
     </main>        
     
     <footer id="footer" class="main-footer"></footer>

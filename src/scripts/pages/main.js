@@ -1,7 +1,10 @@
 import { loadHeaderFooter, populateRandomQuoteElement } from "../utils.mjs";
 import { createReferenceList } from "../books.mjs";
 
-loadHeaderFooter();
-populateRandomQuoteElement();
-createReferenceList();
+async function initializePage() {
+    await loadHeaderFooter('home');
+    createReferenceList();
+    await populateRandomQuoteElement();
+  }
 
+initializePage(); 
